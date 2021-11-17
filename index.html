@@ -1,21 +1,20 @@
 <html>
-  <head>
-    <style>
-    body {background-color:black}
-.vertical-center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="vertical-center">
-        <image src="flushed.png">
-      </div>
-    </div>
-  </body>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>האתר שלי</title>
+<style>
+  body {background:url('matrix.gif');}
+  .center {margin:0;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);}
+  input {color:lime;background:black}
+</style>
+<body>
+  <div class="center">
+      <center>
+        <form action="javascript:passwordfunc()">
+        <input type="password" id="psw"><br>
+        <input id="submit" type="submit" value="Submit">
+      </center>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
