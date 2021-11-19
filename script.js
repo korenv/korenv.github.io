@@ -4,5 +4,5 @@ document.getElementById("submit").onclick = function passwordfunc(){
     if (myInput == password) {
       location.replace("dflkgjdfjgmjkdfngmldfknmhlkdfmngolsfjoamflsemegolsmgksdmgmdfkgmnsdjkvkfbnsdjgklndjkgndrkgnkds")}
     else {
-      location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ%22");
+      location.replace("https://www.youtube.com/watch?v=9K2Y-rfUy_4");
     }}
