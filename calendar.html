@@ -1,0 +1,208 @@
+<style>
+    body {
+        background-color:black;
+        text-align:center;
+    }
+    .center {
+        position:absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .school {background-color:lightblue;color:black}
+      .holiday {background-color:#fce253;color:black}
+      .bday {background-color:#97f25e;color:black;width:90%;height:90%}
+    table {
+        width:80vw;
+        height:30vw;
+        background:#d9d6d0;
+        border-collapse:collapse;
+    }
+    a {text-decoration:none;color:black}
+      h1 {color:white}
+      td,th {
+        border:1px solid black;
+        width:30vw;
+        height:7vw;
+        text-align:center;
+        }
+    th {
+        background:#707273;
+        color:white;
+        height:4vw;
+    }
+
+    .buttons {
+        position:absolute;
+        top: 2vw;
+        left: 50%;
+        transform: translate(-50%,0);
+        }
+    .buttons button {
+        width:7vw;
+        height:2vw;
+        margin:1vw
+    }
+</style>
+<html lang="he" dir="rtl">
+    <title>אוקיי</title>
+    <script>
+        function chat() {location.replace("https://docs.google.com/document/d/1ie3JcNEDVDbM_zrlnUfCtcAelRs1AKOugZ6cF-nIaVo")}
+        function arsford() {location.replace("https://arsford.rf.gd")}
+        function home() {location.replace("index")}
+        function center() {location.replace("https://yeled-center.github.io")}
+        function schedule() {location.replace("מערכת")}
+    </script>
+    <style>
+        .btnrow {
+            background: #333;
+            border:0.3vw solid #222222;
+            width:100%;
+            height:10%;
+            margin:1.5% 0;
+            border-left:none;
+        }
+         .btn {
+            width:10%;
+            height:100%;
+            border-right:0.3vw solid #222222;
+            float:left;
+            background:#636363;
+        }
+        .btn p {
+                text-align:center;
+                padding:0 0;
+                font-size:1.5vw;
+                cursor:pointer;
+            }
+        .btn:hover {background:#bbbbbb}
+        @media only screen and (max-device-width: 700px) {
+            .btnrow {
+                border:1vw solid #222222;
+                height:15vw;
+                margin:1.5vw 0;
+                border-left:none;
+            }
+            .btn {
+                width:14%;
+                border-right:1vw solid #222222;
+                float:left;
+                background:#636363;
+            }
+            .btn p {
+                text-align:center;
+                padding:0 0;
+                font-size:3vw;
+                cursor:pointer;
+            }
+    }
+    </style>
+    <link rel="icon" href="icon.jpg">
+    <div class="btnrow">
+        <div class="btn"><p onclick="schedule()">מערכת</p></div>
+        <div class="btn"><p onclick="center()">ילדי סנטר</p></div>
+        <div class="btn"><p onclick="home()">דף הבית</p></div>
+        <div class="btn" style="background:#bbbbbb"><p>לוח שנה</p></div>
+        <div class="btn"><p onclick="arsford()">ערספורד</p></div>
+        <div class="btn"><p onclick="chat()">צ'אט</p></div>
+    
+    </div>
+    <div class="center">
+    <table id="12"><h1>דצמבר</h1>
+        <tr><th>ראשון</th><th>שני</th><th>שלישי</th><th>רביעי</th><th>חמישי</th><th>שישי</th><th>שבת</th></tr>
+        <tr><td>-</td><td>-</td><td class="holiday">-</td><td id="121" class="holiday">1</td><td id="122" class="holiday">2</td><td id="123" class="holiday">3</td><td id="124" class="holiday">4</td></tr>
+        <tr><td id="125" class="holiday">5</td><td id="126" class="holiday">6</td><td id="127">7</td><td id="128" class="school">8<br>בוחן בעברית (י9)</td><td id="129">9</td><td id="1210">10</td><td id="1211" class="holiday">11</td></tr>
+        <tr><td id="1212">12</td><td id="1213">13</td><td id="1214">14</td><td id="1215">15</td><td id="1216" class="school">16<br>מבחן במתמטיקה</td><td id="1217">17</td><td id="18" class="holiday"><button class="bday">18<br>יום הולדת לרוני פאינגולד</button></td></tr>
+        <tr><td id="1219">19</td><td id="1220">20</td><td id="1221" class="school">21<br>בוחן בתנ"ך</td><td id="1222">22</td><td id="1223">23</td><td id="1224" class="school">24<br>מבחן במוגבר א</td><td id="1225" class="holiday">25</td></tr>
+        <tr><td id="1226" class="school">26<br>הצגה על סמים או משהו לא הבנתי</td><td id="1227" class="school">27<br>מבחן בעברית</td><td id="1228">28</td><td id="1229">29</td><td id="1230">30</td><td id="1231">31</td><td class="holiday">-</td></tr>
+    </table><table id="1"><h1>ינואר</h1>
+        <tr><th>ראשון</th><th>שני</th><th>שלישי</th><th>רביעי</th><th>חמישי</th><th>שישי</th><th>שבת</th></tr>
+        <tr><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td class="holiday" id="011">1</td></tr>
+        <tr><td class="school" id="012">2<br>בחינה כזאת בעברית</td><td class="school" id="013">3<br>מבחן במוגבר ב</td><td id="014" class="school">4<br>יום שדה (י9)</td><td id="015">5</td><td id="016">6</td><td id="017"><button class="bday">7<br>יום הולדת לגיא זקן</button></td><td id="018" class="holiday">8</td></tr>
+        <tr><td id="019">9</td><td id="0110" class="school">10<br>טיול שנתי</td><td id="0111">11</td><td id="0112">12</td><td id="0113">13</td><td id="0114">14</td><td id="0115" class="holiday">15</td></tr>
+        <tr><td id="0116">16</td><td id="0117">17</td><td id="0118">18</td><td id="0119">19</td><td id="0120">20</td><td id="0121">21</td><td id="0122" class="holiday">22</td></tr>
+        <tr><td id="0123" class="school"><button class="bday">23<br>מבחן באנגלית<br>יום הולדת לאיתי חלף</button></td><td id="0124">24</td><td id="0125">25</td><td id="0126">26</td><td id="0127">27</td><td id="0128" class="school">28<br>תעודות</td><td id="0129" class="holiday">29</td></tr>
+        <tr><td id="0130">30</td><td id="0131">31</td><td>-</td><td>-</td><td>-</td><td>-</td><td class="holiday">-</td></tr>
+    </table><table id="2"><h1>פברואר</h1>
+        <tr><th>ראשון</th><th>שני</th><th>שלישי</th><th>רביעי</th><th>חמישי</th><th>שישי</th><th>שבת</th></tr>
+        <tr><td>-</td><td>-</td><td id="21">1</td><td id="22">2</td><td id="23">3</td><td id="24">4</td><td id="25" class="holiday">5</td></tr>
+        <tr><td id="26"><button class="bday">6<br>יום הולדת להדר נקש</button></td><td id="27">7</td><td id="28">8</td><td id="29">9</td><td id="210">10</td><td id="211">11</td><td id="212" class="holiday">12</td></tr>
+        <tr><td id="213">13</td><td id="214">14</td><td id="215"><button class="bday">15<br>יום הולדת לשקד אריס</button></td><td id="216"><button class="bday">16<br>יום הולדת לנטע מוכמל</button></td><td id="217">17</td><td id="218">18</td><td id="219" class="holiday">19</td></tr>
+        <tr><td id="221">20</td><td id="221">21</td><td id="222">22</td><td id="223">23</td><td id="224">24</td><td id="225">25</td><td id="226" class="holiday">26</td></tr>
+        <tr><td id="227">27</td><td id="228">28</td><td>-</td><td>-</td><td>-</td><td>-</td><td class="holiday">-</td></tr>
+    </table><table id="3"><h1>מרץ</h1>
+        <tr><th>ראשון</th><th>שני</th><th>שלישי</th><th>רביעי</th><th>חמישי</th><th>שישי</th><th>שבת</th></tr>
+        <tr><td>-</td><td>-</td><td id="31">1</td><td id="32">2</td><td id="33">3</td><td id="34">4</td><td id="35" class="holiday">5</td></tr>
+        <tr><td id="36">6</td><td id="37">7</td><td id="38">8</td><td id="39">9</td><td id="310">10</td><td id="311">11</td><td id="312" class="holiday">12</td></tr>
+        <tr><td id="313">13</td><td id="314">14</td><td id="f15">15</td><td id="316"class="holiday">16</td><td id="317" class="holiday">17</td><td id="318" class="holiday">18</td><td id="319" class="holiday">19</td></tr>
+        <tr><td id="320">20</td><td id="321">21</td><td id="f22"><button class="bday">22<br>יום הולדת ליגאל ליבוביץ'</button></td><td id="323"">"23</td><td id="324">24</td><td id="325">25</td><td id="326" class="holiday">26</td></tr>
+        <tr><td id="327">27</td><td id="328">28</td><td id="f29">29</td><td id="330">30</td><td id="331">31</td><td>-</td><td class="holiday">-</td></tr>
+    </table><table id="4"><h1>אפריל</h1>
+        <tr><th>ראשון</th><th>שני</th><th>שלישי</th><th>רביעי</th><th>חמישי</th><th>שישי</th><th>שבת</th></tr>
+        <tr><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td id="41">1</td><td id="42" class="holiday">2</td></tr>
+        <tr><td id="43">3</td><td id="44">4</td><td id="45">5</td><td id="46" class="holiday">6</td><td id="47" class="holiday">7</td><td id="48" class="holiday">8</td><td id="49" class="holiday">9</td></tr>
+        <tr><td id="410" class="holiday">10</td><td id="411" class="holiday">11</td><td id="412" class="holiday">12</td><td id="413" class="holiday">13</td><td id="414" class="holiday"><button class="bday">14<br>יום הולדת לשני רודה</button></td><td id="415" class="holiday">15</td><td id="416" class="holiday">16</td></tr>
+        <tr><td id="417" class="holiday">17</td><td id="418" class="holiday">18</td><td id="419" class="holiday">19</td><td id="420" class="holiday">20</td><td id="421" class="holiday">21</td><td id="422" class="holiday"><button class="bday">22<br>יום הולדת לעמית ירמיהו</button></td><td id="423" class="holiday">23</td></tr>
+        <tr><td id="424">24</td><td id="425">25</td><td id="426">26</td><td id="427">27</td><td id="428">28</td><td id="429"><button class="bday">29<br>יום הולדת לשירה מנדל</button></td><td id="430" class="holiday">30</td></tr>
+    </table><table id="5"><h1>מאי</h1>
+        <tr><th>ראשון</th><th>שני</th><th>שלישי</th><th>רביעי</th><th>חמישי</th><th>שישי</th><th>שבת</th></tr>
+        <tr><td id="51">1</td><td id="52">2</td><td id="53">3</td><td id="54">4</td><td id="55" class="holiday">5</td><td id="56">6</td><td id="57" class="holiday">7</td></tr>
+        <tr><td id="58">8</td><td id="59">9</td><td id="510">10</td><td id="511">11</td><td id="512"><button class="bday">12<br>יום הולדת לשילת טל ולנעם אליה</button></td><td id="513">13</td><td id="514" class="holiday">14</td></tr>
+        <tr><td id="515">15</td><td id="516">16</td><td id="517">17</td><td id="518">18</td><td id="519" class="holiday">19</td><td id="520">20</td><td id="521" class="holiday">21</td></tr>
+        <tr><td id="522">22</td><td id="523">23</td><td id="524">24</td><td id="525">25</td><td id="526"><button class="bday">26<br>יום הולדת לנגה מזרחי</button></td><td id="527">27</td><td id="528" class="holiday"><button class="bday">28<br>יום הולדת לעמית רוזנצוויג</button></td></tr>
+        <tr><td id="529">29</td><td id="530">30</td><td id="531">31</td><td>-</td><td>-</td><td>-</td><td class="holiday">-</td></tr>
+    </table><table id="6"><h1>יוני</h1>
+        <tr><th>ראשון</th><th>שני</th><th>שלישי</th><th>רביעי</th><th>חמישי</th><th>שישי</th><th>שבת</th></tr>
+        <tr><td>-</td><td>-</td><td>-</td><td id="61">1</td><td id="62">2</td><td id="63">3</td><td id="64" class="holiday">4</td></tr>
+        <tr><td id="65" class="holiday"><button class="bday">5<br>יום הולדת לליה בן שלוש</button></td><td id="66" class="holiday">6</td><td id="67">7</td><td id="68">8</td><td id="69">9</td><td id="610">10</td><td id="611" class="holiday"><button class="bday">11<br> יום הולדת לאריאל סולטן ולהדר פיינשטיין</button></td></tr>
+        <tr><td id="612"><button class="bday">12<br>יום הולדת לנויה בשקין</button></td><td id="613">13</td><td id="614">14</td><td id="615">15</td><td id="616">16</td><td id="617">17</td><td id="618" class="holiday">18</td></tr>
+        <tr><td id="619">19</td><td id="620">20</td><td id="621" class="holiday">21</td><td id="622" class="holiday">22</td><td id="623" class="holiday">23</td><td id="624" class="holiday">24</td><td id="625" class="holiday">25</td></tr>
+        <tr><td id="626" class="holiday">26</td><td id="627" class="holiday">27</td><td id="628" class="holiday">28</td><td id="629" class="holiday">29</td><td id="630" class="holiday"><button class="bday">30<br>יום הולדת לדביר קייקוב</button></td><td class="holiday">-</td><td class="holiday">-</td></tr>
+    </table><table id="7"><h1>יולי</h1>
+        <tr><th>ראשון</th><th>שני</th><th>שלישי</th><th>רביעי</th><th>חמישי</th><th>שישי</th><th>שבת</th></tr>
+        <tr><td class="holiday">-</td><td class="holiday">-</td><td class="holiday">-</td><td class="holiday">-</td><td class="holiday">-</td><td id="71" class="holiday">1</td><td id="72" class="holiday">2</td></tr>
+        <tr><td id="73" class="holiday">3</td><td id="74" class="holiday">4</td><td id="75" class="holiday">5</td><td id="76" class="holiday">6</td><td id="77" class="holiday">7</td><td id="78" class="holiday">8</td><td id="79" class="holiday">9</td></tr>
+        <tr><td id="710" class="holiday">10</td><td id="711" class="holiday">11</td><td id="712" class="holiday">12</td><td id="713" class="holiday">13</td><td id="714" class="holiday">14</td><td id="15" class="holiday">15</td><td id="716" class="holiday">16</td></tr>
+        <tr><td id="717" class="holiday">17</td><td id="718" class="holiday">18</td><td id="719" class="holiday">19</td><td id="720" class="holiday">20</td><td id="721" class="holiday">21</td><td id="722" class="holiday">22</td><td id="723" class="holiday">23</td></tr>
+        <tr><td id="724" class="holiday">24</td><td id="725" class="holiday"><button class="bday">25<br>יום הולדת לאלון צור</button></td><td id="726" class="holiday">26</td><td id="726" class="holiday">27</td><td id="727" class="holiday">28</td><td id="728" class="holiday">29</td><td id="729" class="holiday"><button class="bday">30<br>יום הולדת לים אביבי</button></td></tr>
+        <tr><td id="731" class="holiday">31</td><td class="holiday">-</td><td class="holiday">-</td><td class="holiday">-</td><td class="holiday">-</td><td class="holiday">-</td><td class="holiday">-</td></tr>
+    </table><table id="8"><h1>אוגוסט</h1>
+        <tr><th>ראשון</th><th>שני</th><th>שלישי</th><th>רביעי</th><th>חמישי</th><th>שישי</th><th>שבת</th></tr>
+        <tr><td class="holiday">-</td><td id="81" class="holiday"><button class="bday">1<br>יום הולדת ליעל רוזנברג ולדנה פבלוב</button></td><td id="82" class="holiday">2</td><td id="83" class="holiday">3</td><td id="84" class="holiday">4</td><td id="85" class="holiday">5</td><td id="86" class="holiday">6</td></tr>
+        <tr><td id="87" class="holiday">7</td><td id="88" class="holiday">8</td><td id="89" class="holiday"><button class="bday">9<br>יום הולדת לאלה מרקוביץ'</button></td><td id="810" class="holiday">10</td><td id="811" class="holiday">11</td><td id="812" class="holiday">12</td><td id="813" class="holiday">13</td></tr>
+        <tr><td id="814" class="holiday">14</td><td id="815" class="holiday">15</td><td id="816" class="holiday">16</td><td id="817" class="holiday">17</td><td id="818" class="holiday">18</td><td id="819" class="holiday">19</td><td id="820" class="holiday">20</td></tr>
+        <tr><td id="821" class="holiday">21</td><td id="822" class="holiday">22</td><td id="823" class="holiday"><button class="bday">23<br>יום הולדת לדבורה חדד</button></td><td id="824" class="holiday">24</td><td id="825" class="holiday">25</td><td id="826" class="holiday">26</td><td id="827" class="holiday">27</td></tr>
+        <tr><td id="828" class="holiday">28</td><td id="829" class="holiday">29</td><td id="830" class="holiday">30</td><td id="831" class="holiday">31</td><td>-</td><td>-</td><td class="holiday">-</td></tr>
+    </table><table id="9"><h1>ספטמבר</h1>
+        <tr><th>ראשון</th><th>שני</th><th>שלישי</th><th>רביעי</th><th>חמישי</th><th>שישי</th><th>שבת</th></tr>
+        <tr><td class="holiday">-</td><td class="holiday">-</td><td class="holiday">-</td><td class="holiday">-</td><td id="91">1</td><td id="92">2</td><td id="93" class="holiday">3</td></tr>
+        <tr><td id="94">4</td><td id="95">5</td><td id="96"><button class="bday">6<br>יום הולדת לתמר שובל</button></td><td id="97">7</td><td id="98">8</td><td id="99">9</td><td id="910" class="holiday">10</td></tr>
+        <tr><td id="911">11</td><td id="912">12</td><td id="913">13</td><td id="914">14</td><td id="915">15</td><td id="916">16</td><td id="917" class="holiday">17</td></tr>
+        <tr><td id="918">18</td><td id="919">19</td><td id="920">20</td><td id="921">21</td><td id="922">22</td><td id="923">23</td><td id="924" class="holiday">24</td></tr>
+        <tr><td id="925" class="holiday">25</td><td id="926" class="holiday">26</td><td id="927" class="holiday">27</td><td id="928">28</td><td id="929">29</td><td id="930">30</td><td class="holiday">-</td></tr>
+    </table><table id="10"><h1>אוקטובר</h1>
+        <tr><th>ראשון</th><th>שני</th><th>שלישי</th><th>רביעי</th><th>חמישי</th><th>שישי</th><th>שבת</th></tr>
+        <tr><td class="holiday">-</td><td class="holiday">-</td><td class="holiday">-</td><td>-</td><td>-</td><td>-</td><td id="101" class="holiday">1</td></tr>
+        <tr><td id="102">2</td><td id="103">3</td><td id="104" class="holiday">4</td><td id="105" class="holiday">5</td><td id="106">6</td><td id="107">7</td><td id="108" class="holiday">8</td></tr>
+        <tr><td id="109" class="holiday">9</td><td id="1010" class="holiday"><button class="bday">10<br>יום הולדת לרוני להב</button></td><td id="1011" class="holiday"><button class="bday">11<br>יום הולדת למתן צהיו</button></td><td id="1012" class="holiday"><button class="bday">12<br>יום הולדת לעדי מה-יפית וליהלי אביטן</button></td><td id="1013" class="holiday">13</td><td id="1014" class="holiday">14</td><td id="1015" class="holiday">15</td></tr>
+        <tr><td id="1016" class="holiday">16</td><td id="1017" class="holiday"><button class="bday">17<br>יום הולדת לאיתן סלמוב</button></td><td id="1018" class="holiday">18</td><td id="1019">19</td><td id="1020">20</td><td id="1021">21</td><td id="1022" class="holiday">22</td></tr>
+        <tr><td id="1023"><button class="bday">23<br>יום הולדת לאיתן וילנצ'יק</button></td><td id="1024">24</td><td id="1025">25</td><td id="1026">26</td><td id="1027"><button class="bday">27<br>יום הולדת לרוני טל</button></td><td id="1028">28</td><td id="1029" class="holiday">29</td></tr>
+        <tr><td id="1030">30</td><td id="1031">31</td><td>-</td><td>-</td><td>-</td><td>-</td><td class="holiday">-</td></tr>
+    </table><table id="11"><h1>נובמבר</h1>
+        <tr><th>ראשון</th><th>שני</th><th>שלישי</th><th>רביעי</th><th>חמישי</th><th>שישי</th><th>שבת</th></tr>
+        <tr><td>-</td><td>-</td><td id="111">1</td><td id="112">2</td><td id="113"><button class="bday">3<br>יום הולדת לאיליי שלמה</button></td><td id="114">4</td><td id="115" class="holiday">5</td></tr>
+        <tr><td id="116">6</td><td id="117">7</td><td id="118">8</td><td id="119">9</td><td id="1110">10</td><td id="1111">11</td><td id="1112" class="holiday">12</td></tr>
+        <tr><td id="1113">13</td><td id="1114">14</td><td id="1115">15</td><td id="1116">16</td><td id="1117">17</td><td id="1118">18</td><td id="1119" class="holiday">19</td></tr>
+        <tr><td id="1120">20</td><td id="1121">21</td><td id="1122">22</td><td id="1123"><button class="bday">23<br>יום הולדת לי</button></td><td id="1124">24</td><td id="1125">25</td><td id="1126" class="holiday">26</td></tr>
+        <tr><td id="1127">27</td><td id="1128">28</td><td id="1129">29</td><td id="1130">30</td><td>-</td><td>-</td><td class="holiday">-</td></tr>
+        </table>
+    </div>
+</html>
+<script> /*this sets the current date red*/
+const m = new Date();
+    if(m == 1){m == "01"}
+const d = new Date();
+let month = m.getMonth() + 1;
+let day = d.getDate();
+var element = document.getElementById(month + "" + day);
+element.style.backgroundColor = "lightcoral";
+</script>

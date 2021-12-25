@@ -1,0 +1,98 @@
+<html lang="he" dir="rtl">
+    <script>
+        function chat() {location.replace("https://docs.google.com/document/d/1ie3JcNEDVDbM_zrlnUfCtcAelRs1AKOugZ6cF-nIaVo")}
+        function arsford() {location.replace("https://arsford.rf.gd")}
+        function calendar() {location.replace("calendar")}
+        function center() {location.replace("https://yeled-center.github.io")}
+        function index() {location.replace("index")}
+    </script>
+    <html lang="he" dir="ltr">
+        <link rel="icon" href="icon.jpg">
+    <div class="btnrow">
+        <div class="btn" style="background:#bbbbbb"><p>מערכת</p></div>
+        <div class="btn"><p onclick="center()">ילדי סנטר</p></div>
+        <div class="btn"><p onclick="index()">דף הבית</p></div>
+        <div class="btn"><p onclick="calendar()">לוח שנה</p></div>
+        <div class="btn"><p onclick="arsford()">ערספורד</p></div>
+        <div class="btn"><p onclick="chat()">צ'אט</p></div>
+    </div>
+    <title>מערכת</title>
+    <table>
+        <tr><th>יום/שעה</th><th>ראשון</th><th>שני</th><th>שלישי</th><th>רביעי</th><th>חמישי</th><th>שישי</th></tr>
+        <tr><th>1<br>8:30 - 9:10</th><td class="history">היסטוריה</td><td class="sport">חנ"ג</td><td class="bible">תנ"ך</td><td></td><td class="math">מתמטיקה</td><td class="geography">גיאוגרפיה</td></tr>
+        <tr><th>2<br>9:10 - 9:50</th><td class="history">היסטוריה</td><td class="shelah">של"ח</td><td class="bible">תנ"ך</td><td class="math">מתמטיקה</td><td class="math">מתמטיקה</td><td class="geography">גיאוגרפיה</td></tr>
+        <tr><th>3<br>10:05 - 10:45</th><td class="english">אנגלית</td><td class="hebrew">עברית</td><td class="history">היסטוריה</td><td class="bible">תנ"ך</td><td class="math">מתמטיקה</td><td class="geography">גיאוגרפיה</td></tr>
+        <tr><th>4<br>10:50 - 11:30</th><td class="english">אנגלית</td><td class="hebrew">עברית</td><td class="math">מתמטיקה</td><td class="hebrew">עברית</td><td class="sport">חנ"ג</td><td></td></tr>
+        <tr><th>5<br>11:40 - 12:20</th><td class="library">מחויבות אישית</td><td class="edu">חינוך</td><td class="math">מתמטיקה</td><td class="hebrew">עברית</td><td class="edu">חינוך</td><td></td></tr>
+        <tr><th>6<br>12:20 - 13:00</th><td class="library">מחויבות אישית</td><td class="socialogy">סוציולוגיה</td><td class="library">מחויבות אישית</td><td class="library">מחויבות אישית</td><td class="english">אנגלית</td><td class="chem">מבוא לכימיה<br>אסינכרוני</td></tr>
+        <tr><th>7<br>13:20 - 14:00</th><td></td><td class="socialogy">סוציולוגיה</td><td></td><td class="english">אנגלית</td><td class="english">אנגלית</td><td></td></tr>
+        <tr><th>8<br>14:10 - 14:50</th><td></td><td class="socialogy">סוציולוגיה</td></td><td><td class="chem">מבוא לכימיה</td><td></td><td></td></tr>
+        <tr><th>9<br>14:50 - 15:30</th><td></td><td></td><td></td><td class="chem">מבוא לכימיה</td><td></td><td></td></tr>
+    </table>
+</html>
+<style>
+        body {background:#696969}
+        .history {background:yellow;}
+        .english {background:orange;}
+        .sport {background:turquoise;}
+        .shelah {background:tan;}
+        .hebrew {background:violet;}
+        .edu {background:#e7ffa1;}
+        .socialogy {background:#c97c6d;}
+        .geography {background:#f2d7b8;}
+        .bible {background:#92ccd4;}
+        .math {background:#9bab65;}
+        .chem {background:#9b6fbd;}
+        .library {background:#ffc2de}
+        .scrollmenu {height:50;background:#333;overflow-x:auto;overflow-y:hidden;white-space:nowrap;}
+        .scrollmenu a {display:inline-block;color:white;padding:14px;text-decoration:none}
+        .scrollmenu a:hover {background:#777;}
+        td {text-shadow:2px 2px 4px #000000;background-color:#c4c4c4;color:white}
+        th {background:#c4c4c4;min-width:10vw;font-weight:lighter}
+        table, td, th {border: 2px solid black}
+        table {position:absolute;right:50%;transform:translate(50%);border-collapse:collapse;font-size:1.5vw;height:80%;text-align:center}
+    .btnrow {
+        background: #333;
+        border:0.3vw solid #222222;
+        width:100%;
+        height:10%;
+        margin:1.5% 0;
+        border-left:none;
+    }
+     .btn {
+        width:10%;
+        height:100%;
+        border-right:0.3vw solid #222222;
+        float:left;
+        background:#636363;
+    }
+    .btn p {
+            text-align:center;
+            padding:0 0;
+            font-size:1.5vw;
+            cursor:pointer;
+        }
+    .btn:hover {background:#bbbbbb}
+    @media only screen and (max-device-width: 700px) {
+        .btnrow {
+            border:1vw solid #222222;
+            height:15vw;
+            margin:1.5vw 0;
+            border-left:none;
+        }
+        .btn {
+            width:14%;
+            border-right:1vw solid #222222;
+            float:left;
+            background:#636363;
+        }
+        .btn p {
+            text-align:center;
+            padding:0 0;
+            font-size:3vw;
+            cursor:pointer;
+        }
+        table {font-size:1.5vw;height:40%;text-align:center}
+        th {min-width:12vw}
+}
+</style>
