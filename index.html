@@ -1,67 +1,24 @@
-<script>
-    function chat() {window.open("https://docs.google.com/document/d/1ie3JcNEDVDbM_zrlnUfCtcAelRs1AKOugZ6cF-nIaVo","_self")}
-    function arsford() {window.open("http://arsford.rf.gd","_self")}
-    function calendar() {window.open("calendar","_self")}
-    function center() {window.open("https://yeled-center.github.io","_self")}
-    function schedule() {window.open("מערכת","_self")}
-</script>
-<html lang="he" dir="ltr">
-    <link rel="icon" href="icon.jpg">
-<div class="btnrow">
-    <div class="btn"><p onclick="schedule()">מערכת</p></div>
-    <div class="btn"><p onclick="center()">ילדי סנטר</p></div>
-    <div class="btn" style="background:#bbbbbb"><p>דף הבית</p></div>
-    <div class="btn"><p onclick="calendar()">לוח שנה</p></div>
-    <div class="btn"><p onclick="arsford()">ערספורד</p></div>
-    <div class="btn"><p onclick="chat()">צ'אט</p></div>
-</div>
-<title>סתום</title>
-</html>
 <style>
     body {
-        background:#000000 url("matrix.gif") no-repeat;
-        background-size: cover;
-    }
-    .btnrow {
-        background: #333;
-        border:0.3vw solid #222222;
-        width:100%;
-        height:10%;
-        margin:1.5% 0;
-        border-left:none;
-    }
-     .btn {
-        width:10%;
-        height:100%;
-        border-right:0.3vw solid #222222;
-        float:left;
-        background:#636363;
-    }
-    .btn p {
-            text-align:center;
-            padding:0 0;
-            font-size:1.5vw;
-            cursor:pointer;
+        background:#000000 url('matrix.gif') no-repeat;
+        background-size:cover;
         }
-    .btn:hover {background:#bbbbbb}
-    @media only screen and (max-device-width: 700px) {
-        .btnrow {
-            border:1vw solid #222222;
-            height:8vw;
-            margin:1.5vw 0;
-            border-left:none;
-        }
-        .btn {
-            width:14%;
-            border-right:1vw solid #222222;
-            float:left;
-            background:#636363;
-        }
-        .btn p {
-            text-align:center;
-            padding:0 0;
-            font-size:3vw;
-            cursor:pointer;
-        }
-}
 </style>
+<html lang="he" dir="ltr">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Koren Ventura">
+    <title>ברצוני למות</title>
+    <link rel="icon" href="icon.jpg">
+    <link rel="stylesheet" href="buttons.css">
+    <p style="font-size:1.5;color:rgba(255, 255, 255, 0.548)">או מוות מתוק תן לי גאולה</p>
+    <div class="btn-group pre-scrollable">
+        <a href="https://korenv.github.io"><button class="btn-group-btn">בית</button></a>
+        <a href="https://korenv.github.io/מערכת"><button class="btn-group-btn">מערכת</button></a>
+        <a href="https://korenv.github.io/calendar"><button class="btn-group-btn">לוח שנה</button></a>
+        <a target="_blank" href="https://yeled-center.github.io"><button class="btn-group-btn">ילדי סנטר</button></a>
+        <a target="_blank" href="http://arsford.rf.gd"><button class="btn-group-btn">ערספורד</button></a>
+        <a target="_blank" href="https://docs.google.com/document/u/1/d/1ie3JcNEDVDbM_zrlnUfCtcAelRs1AKOugZ6cF-nIaVo"><button class="btn-group-btn">דוקס</button></a>
+        <a target="_blank" href="http://deshalit.rf.gd"><button class="btn-group-btn">תלמידי דה שליט</button></a>
+    </div>
+</html>

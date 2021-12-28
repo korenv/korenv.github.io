@@ -1,9 +1,9 @@
 <style>
     body {
         background-color:black;
-        text-align:center;
     }
     .center {
+        text-align:center;
         position:absolute;
         left: 50%;
         transform: translate(-50%);
@@ -12,8 +12,8 @@
       .holiday {background-color:#fce253;color:black}
       .bday {background-color:#97f25e;color:black;width:90%;height:90%}
     table {
-        width:80vw;
-        height:30vw;
+        width:1520;
+        height:570;
         background:#d9d6d0;
         border-collapse:collapse;
     }
@@ -21,92 +21,34 @@
       h1 {color:white}
       td,th {
         border:1px solid black;
-        width:30vw;
-        height:7vw;
+        width:570;
+        height:133;
         text-align:center;
         }
     th {
         background:#707273;
         color:white;
-        height:4vw;
-    }
-
-    .buttons {
-        position:absolute;
-        top: 2vw;
-        left: 50%;
-        transform: translate(-50%,0);
-        }
-    .buttons button {
-        width:7vw;
-        height:2vw;
-        margin:1vw
+        height:50;
     }
 </style>
-<html lang="he" dir="rtl">
-    <title>אוקיי</title>
-    <script>
-        function chat() {window.open("https://docs.google.com/document/d/1ie3JcNEDVDbM_zrlnUfCtcAelRs1AKOugZ6cF-nIaVo","_self")}
-        function arsford() {window.open("http://arsford.rf.gd","_self")}
-        function home() {window.open("index","_self")}
-        function center() {window.open("https://yeled-center.github.io","_self")}
-        function schedule() {window.open("מערכת","_self")}
-    </script>
-    <style>
-        .btnrow {
-            background: #333;
-            border:0.3vw solid #222222;
-            width:100%;
-            height:10%;
-            margin:1.5% 0;
-            border-left:none;
-        }
-         .btn {
-            width:10%;
-            height:100%;
-            border-right:0.3vw solid #222222;
-            float:left;
-            background:#636363;
-        }
-        .btn p {
-                text-align:center;
-                padding:0 0;
-                font-size:1.5vw;
-                cursor:pointer;
-            }
-        .btn:hover {background:#bbbbbb}
-        @media only screen and (max-device-width: 700px) {
-            .btnrow {
-                border:1vw solid #222222;
-                height:8vw;
-                margin:1.5vw 0;
-                border-left:none;
-            }
-            .btn {
-                width:14%;
-                border-right:1vw solid #222222;
-                float:left;
-                background:#636363;
-            }
-            .btn p {
-                text-align:center;
-                padding:0 0;
-                font-size:3vw;
-                cursor:pointer;
-            }
-    }
-    </style>
+<html lang="he" dir="ltr">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Koren Ventura">
+    <title>אה</title>
+    <body>
+    <link rel="stylesheet" href="../../new good/korenv.github.io/buttons.css">
     <link rel="icon" href="icon.jpg">
-    <div class="btnrow">
-        <div class="btn"><p onclick="schedule()">מערכת</p></div>
-        <div class="btn"><p onclick="center()">ילדי סנטר</p></div>
-        <div class="btn"><p onclick="home()">דף הבית</p></div>
-        <div class="btn" style="background:#bbbbbb"><p>לוח שנה</p></div>
-        <div class="btn"><p onclick="arsford()">ערספורד</p></div>
-        <div class="btn"><p onclick="chat()">צ'אט</p></div>
-    
+    <div class="btn-group pre-scrollable">
+        <a href="https://korenv.github.io"><button class="btn-group-btn">בית</button></a>
+        <a href="https://korenv.github.io/מערכת"><button class="btn-group-btn">מערכת</button></a>
+        <a href="https://korenv.github.io/calendar"><button class="btn-group-btn">לוח שנה</button></a>
+        <a target="_blank" href="https://yeled-center.github.io"><button class="btn-group-btn">ילדי סנטר</button></a>
+        <a target="_blank" href="http://arsford.rf.gd"><button class="btn-group-btn">ערספורד</button></a>
+        <a target="_blank" href="https://docs.google.com/document/u/1/d/1ie3JcNEDVDbM_zrlnUfCtcAelRs1AKOugZ6cF-nIaVo"><button class="btn-group-btn">דוקס</button></a>
+        <a target="_blank" href="http://deshalit.rf.gd"><button class="btn-group-btn">תלמידי דה שליט</button></a>
     </div>
-    <div class="center">
+    <div class="center" dir="rtl">
     <table id="12"><h1>דצמבר</h1>
         <tr><th>ראשון</th><th>שני</th><th>שלישי</th><th>רביעי</th><th>חמישי</th><th>שישי</th><th>שבת</th></tr>
         <tr><td>-</td><td>-</td><td class="holiday">-</td><td id="121" class="holiday">1</td><td id="122" class="holiday">2</td><td id="123" class="holiday">3</td><td id="124" class="holiday">4</td></tr>
