@@ -49,14 +49,7 @@
         <a target="_blank" href="http://deshalit.rf.gd"><button class="btn-group-btn">תלמידי דה שליט</button></a>
     </div>
     <div class="center" dir="rtl">
-    <table id="12"><h1>דצמבר</h1>
-        <tr><th>ראשון</th><th>שני</th><th>שלישי</th><th>רביעי</th><th>חמישי</th><th>שישי</th><th>שבת</th></tr>
-        <tr><td>-</td><td>-</td><td class="holiday">-</td><td id="121" class="holiday">1</td><td id="122" class="holiday">2</td><td id="123" class="holiday">3</td><td id="124" class="holiday">4</td></tr>
-        <tr><td id="125" class="holiday">5</td><td id="126" class="holiday">6</td><td id="127">7</td><td id="128" class="school">8<br>בוחן בעברית (י9)</td><td id="129">9</td><td id="1210">10</td><td id="1211" class="holiday">11</td></tr>
-        <tr><td id="1212">12</td><td id="1213">13</td><td id="1214">14</td><td id="1215">15</td><td id="1216" class="school">16<br>מבחן במתמטיקה</td><td id="1217">17</td><td id="18" class="holiday"><button class="bday">18<br>יום הולדת לרוני פאינגולד</button></td></tr>
-        <tr><td id="1219">19</td><td id="1220">20</td><td id="1221" class="school">21<br>בוחן בתנ"ך</td><td id="1222">22</td><td id="1223">23</td><td id="1224" class="school">24<br>מבחן במוגבר א</td><td id="1225" class="holiday">25</td></tr>
-        <tr><td id="1226" class="school">26<br>הצגה על סמים או משהו לא הבנתי</td><td id="1227" class="school">27<br>מבחן בעברית</td><td id="1228">28</td><td id="1229">29</td><td id="1230">30</td><td id="1231">31</td><td class="holiday">-</td></tr>
-    </table><table id="1"><h1>ינואר</h1>
+    <table id="1"><h1>ינואר</h1>
         <tr><th>ראשון</th><th>שני</th><th>שלישי</th><th>רביעי</th><th>חמישי</th><th>שישי</th><th>שבת</th></tr>
         <tr><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td class="holiday" id="011">1</td></tr>
         <tr><td class="school" id="012">2<br>בחינה כזאת בעברית</td><td class="school" id="013"><a href="חומר/sociology_test">3<br>מבחן במוגבר ב</a></td><td id="014" class="school">4<br>יום שדה (י9)</td><td id="015">5</td><td id="016">6</td><td id="017"><button class="bday">7<br>יום הולדת לגיא זקן</button></td><td id="018" class="holiday">8</td></tr>
@@ -136,15 +129,28 @@
         <tr><td id="1113">13</td><td id="1114">14</td><td id="1115">15</td><td id="1116">16</td><td id="1117">17</td><td id="1118">18</td><td id="1119" class="holiday">19</td></tr>
         <tr><td id="1120">20</td><td id="1121">21</td><td id="1122">22</td><td id="1123"><button class="bday">23<br>יום הולדת לי</button></td><td id="1124">24</td><td id="1125">25</td><td id="1126" class="holiday">26</td></tr>
         <tr><td id="1127">27</td><td id="1128">28</td><td id="1129">29</td><td id="1130">30</td><td>-</td><td>-</td><td class="holiday">-</td></tr>
+        </table><table id="12"><h1>דצמבר</h1>
+            <tr><th>ראשון</th><th>שני</th><th>שלישי</th><th>רביעי</th><th>חמישי</th><th>שישי</th><th>שבת</th></tr>
+            <tr><td>-</td><td>-</td><td>-</td><td>-</td><td id="121">1</td><td id="122">2</td><td id="123" class="holiday">3</td></tr>
+            <tr><td id="124">4</td><td id="125">5</td><td id="126">6</td><td id="127" class="holiday">7</td><td id="128" class="holiday">8</td><td id="129" class="holiday">9</td><td id="1210" class="holiday">10</td></tr>
+            <tr><td id="1211" class="holiday">11</td><td id="1212" class="holiday">12</td><td id="1213" class="holiday">13</td><td id="1214" class="holiday">14</td><td id="1215" class="holiday">15</td><td id="1216">16</td><td id="1217" class="holiday">17</td></tr>
+            <tr><td id="18"><button class="bday">18<br>יום הולדת לרוני פאינגולד</button></td><td id="1219">19</td><td id="1220">20</td><td id="1221">21</td><td id="1222">22</td><td id="1223">23</td><td id="1224" class="holiday">24</td></tr>
+            <tr><td id="1225">25</td><td id="1226">26</td><td id="1227">27</td><td id="1228">28</td><td id="1229">29</td><td id="1230">30</td><td id="1231" class="holiday">31</td></tr>
         </table>
     </div>
+    <p style="color:white" id="demo">a</p>
 </html>
 <script> /*this sets the current date red*/
 const m = new Date();
-    if(m == 1){m == "01"}
-const d = new Date();
-let month = m.getMonth() + 1;
-let day = d.getDate();
-var element = document.getElementById(month + "" + day);
-element.style.backgroundColor = "lightcoral";
+const monthid = m.getMonth() + 1;
+    if(monthid == 1) {
+        let month = "01";
+        let day = m.getDate();
+        document.getElementById(month + "" + day).style.backgroundColor = "lightcoral";
+    }
+    else {
+        let month = monthid;
+        let day = m.getDate();  
+        document.getElementById(month + "" + day).style.backgroundColor = "lightcoral";
+    }
 </script>
