@@ -138,7 +138,6 @@
             <tr><td id="1225">25</td><td id="1226">26</td><td id="1227">27</td><td id="1228">28</td><td id="1229">29</td><td id="1230">30</td><td id="1231" class="holiday">31</td></tr>
         </table>
     </div>
-    <p style="color:white" id="demo">a</p>
 </html>
 <script> /*this sets the current date red*/
 const m = new Date();
@@ -146,11 +145,13 @@ const monthid = m.getMonth() + 1;
     if(monthid == 1) {
         let month = "01";
         let day = m.getDate();
+        if((''+day)[0] = 0){let day = parseInt((''+day)[1])}
         document.getElementById(month + "" + day).style.backgroundColor = "lightcoral";
     }
     else {
         let month = monthid;
-        let day = m.getDate();  
+        let day = m.getDate(); 
+        if((''+day)[0] = 0){let day = parseInt((''+day)[1])} 
         document.getElementById(month + "" + day).style.backgroundColor = "lightcoral";
     }
 </script>
